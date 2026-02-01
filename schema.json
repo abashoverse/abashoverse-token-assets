@@ -1,0 +1,111 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Abashoverse Token List",
+  "type": "object",
+  "required": ["version", "name", "tokens"],
+  "properties": {
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "description": "Semantic version of the token list"
+    },
+    "name": {
+      "type": "string",
+      "description": "Name of the token list"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of the token list"
+    },
+    "chains": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["name", "type"],
+        "properties": {
+          "name": { "type": "string" },
+          "type": { "type": "string", "enum": ["mainnet", "testnet"] }
+        }
+      }
+    },
+    "tokens": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["chainId", "address", "symbol", "name", "decimals"],
+        "properties": {
+          "chainId": {
+            "type": "integer",
+            "description": "Chain ID where the token is deployed"
+          },
+          "address": {
+            "type": "string",
+            "pattern": "^0x[a-f0-9]{40}$",
+            "description": "Token contract address (lowercase)"
+          },
+          "symbol": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 20,
+            "description": "Token symbol"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 64,
+            "description": "Token name"
+          },
+          "decimals": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 18,
+            "description": "Number of decimals"
+          },
+          "verified": {
+            "type": "boolean",
+            "description": "Whether the token is verified by Abashoverse"
+          },
+          "tags": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Tags for categorization"
+          },
+          "logoURI": {
+            "type": "string",
+            "description": "Relative path to token logo (e.g., icons/0x...abc.svg or icons/0x...abc.png)"
+          }
+        }
+      }
+    },
+    "collections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "tokens"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$",
+            "description": "Unique collection identifier"
+          },
+          "name": {
+            "type": "string",
+            "description": "Display name of the collection"
+          },
+          "description": {
+            "type": "string",
+            "description": "Description of the collection"
+          },
+          "tokens": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^0x[a-f0-9]{40}$"
+            },
+            "description": "List of token addresses in this collection (lowercase)"
+          }
+        }
+      }
+    }
+  }
+}
