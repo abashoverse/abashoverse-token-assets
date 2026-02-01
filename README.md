@@ -94,7 +94,7 @@ abashoverse-token-assets/
 3. **Add token icon** to `icons/`:
    - Filename: `{lowercase_address}.svg` or `.png` or `.webp`
    - Dimensions: 64x64 px for PNG/WebP, `viewBox="0 0 64 64"` for SVG
-   - Shape: Square with rounded corners (12px radius recommended)
+   - Shape: Square (no rounded corners)
    - Background: Solid brand color (no transparency)
    - Must match the `logoURI` path in tokens.json
 
@@ -104,21 +104,21 @@ abashoverse-token-assets/
 
 - **Dimensions**: 64x64 pixels (required for PNG/WebP, viewBox for SVG)
 - **Format**: SVG preferred (scales better), PNG and WebP also accepted
-- **Shape**: Square with rounded corners (12px radius)
+- **Shape**: Square (no rounded corners)
 - **Background**: Solid brand color (no transparency)
 - **Naming**: `{lowercase_address}.{ext}` (e.g., `0xb1488f753521c58f2ddfaf99b503c48aa14dfabe.svg`)
 
-| Format | Dimensions | Shape | Notes |
-|--------|------------|-------|-------|
-| SVG | `viewBox="0 0 64 64"` | `<rect rx="12"/>` | Preferred - scales perfectly |
-| PNG | 64x64 px | 12px corner radius | Use for complex logos, keep under 10KB |
-| WebP | 64x64 px | 12px corner radius | Good compression, modern browsers only |
+| Format | Dimensions | Notes |
+|--------|------------|-------|
+| SVG | `viewBox="0 0 64 64"` | Preferred - scales perfectly |
+| PNG | 64x64 px | Use for complex logos, keep under 10KB |
+| WebP | 64x64 px | Good compression, modern browsers only |
 
 ### SVG Template
 
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="12" fill="#YOUR_BRAND_COLOR"/>
+  <rect width="64" height="64" fill="#YOUR_BRAND_COLOR"/>
   <!-- Your logo content here -->
 </svg>
 ```
