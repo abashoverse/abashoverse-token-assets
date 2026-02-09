@@ -1,0 +1,7 @@
+{
+  "$schema": "./nft-schema.json",
+  "version": "1.0.0",
+  "name": "Abashoverse NFT List",
+  "description": "Verified NFT collections for the Abashoverse ecosystem on Abstract chain",
+  "nfts": []
+}

@@ -72,7 +72,7 @@
           },
           "logoURI": {
             "type": "string",
-            "description": "Relative path to token logo (e.g., icons/0x...abc.svg or icons/0x...abc.png)"
+            "description": "Relative path to token logo (e.g., icons/tokens/2741/0x...abc.png)"
           }
         }
       }

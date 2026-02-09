@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Abashoverse NFT List",
+  "type": "object",
+  "required": ["version", "name", "nfts"],
+  "properties": {
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "description": "Semantic version of the NFT list"
+    },
+    "name": {
+      "type": "string",
+      "description": "Name of the NFT list"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of the NFT list"
+    },
+    "nfts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["chainId", "address", "name", "type"],
+        "properties": {
+          "chainId": {
+            "type": "integer",
+            "description": "Chain ID where the NFT contract is deployed"
+          },
+          "address": {
+            "type": "string",
+            "pattern": "^0x[a-f0-9]{40}$",
+            "description": "NFT contract address (lowercase)"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 64,
+            "description": "Collection name"
+          },
+          "symbol": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 20,
+            "description": "Collection symbol"
+          },
+          "type": {
+            "type": "string",
+            "enum": ["ERC721", "ERC1155"],
+            "description": "NFT standard"
+          },
+          "verified": {
+            "type": "boolean",
+            "description": "Whether the collection is verified by Abashoverse"
+          },
+          "tags": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Tags for categorization"
+          },
+          "logoURI": {
+            "type": "string",
+            "description": "Relative path to collection logo (e.g., icons/nfts/2741/0x...abc.png)"
+          }
+        }
+      }
+    }
+  }
+}
