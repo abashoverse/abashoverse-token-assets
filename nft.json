@@ -12,7 +12,7 @@
       "type": "ERC721",
       "verified": true,
       "tags": ["testnet"],
-      "logoURI": "icons/nfts/11124/0x508824fd8abd35205fd6d22ee7b794bd789f0ae2.png"
+      "logoURI": "icons/nfts/11124/0x508824fd8abd35205fd6d22ee7b794bd789f0ae2.svg"
     }
   ]
 }
