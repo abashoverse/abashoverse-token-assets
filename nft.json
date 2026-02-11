@@ -11,8 +11,118 @@
       "symbol": "FIEND",
       "type": "ERC721",
       "verified": true,
-      "tags": ["testnet"],
+      "tags": [
+        "testnet"
+      ],
       "logoURI": "icons/nfts/11124/0x508824fd8abd35205fd6d22ee7b794bd789f0ae2.svg"
+    },
+    {
+      "chainId": 2741,
+      "address": "0x5b720f0698547554ab1f7c127a2bda38391d1b4b",
+      "name": "OCB",
+      "symbol": "OCB",
+      "type": "ERC721",
+      "verified": true,
+      "tags": [
+        "mainnet"
+      ],
+      "logoURI": "icons/nfts/2741/0x5b720f0698547554ab1f7c127a2bda38391d1b4b.png"
+    },
+    {
+      "chainId": 2741,
+      "address": "0x99b9007f3c8732b9bff2ed68ab7f73f27c4a0c53",
+      "name": "FUGZ",
+      "symbol": "FUGZ",
+      "type": "ERC721",
+      "verified": true,
+      "tags": [
+        "mainnet"
+      ],
+      "logoURI": "icons/nfts/2741/0x99b9007f3c8732b9bff2ed68ab7f73f27c4a0c53.png"
+    },
+    {
+      "chainId": 2741,
+      "address": "0x516dc288e26b34557f68ea1c1ff13576eff8a168",
+      "name": "BEARISH",
+      "symbol": "BURR",
+      "type": "ERC721",
+      "verified": true,
+      "tags": [
+        "mainnet"
+      ],
+      "logoURI": "icons/nfts/2741/0x516dc288e26b34557f68ea1c1ff13576eff8a168.png"
+    },
+    {
+      "chainId": 2741,
+      "address": "0x59eec556cef447e13edf4bfd3d4433d8dad8a7a5",
+      "name": "GigaRomNFT",
+      "symbol": "ROM",
+      "type": "ERC721",
+      "verified": true,
+      "tags": [
+        "mainnet"
+      ],
+      "logoURI": "icons/nfts/2741/0x59eec556cef447e13edf4bfd3d4433d8dad8a7a5.png"
+    },
+    {
+      "chainId": 2741,
+      "address": "0xd320831c876190c7ef79376ffcc889756f038e04",
+      "name": "GigaPetNFT",
+      "symbol": "PET",
+      "type": "ERC721",
+      "verified": true,
+      "tags": [
+        "mainnet"
+      ],
+      "logoURI": "icons/nfts/2741/0xd320831c876190c7ef79376ffcc889756f038e04.png"
+    },
+    {
+      "chainId": 2741,
+      "address": "0x4b432060903184c5710f2ef0cf23adc84e7ffb18",
+      "name": "Abstractio",
+      "symbol": "ABSIO",
+      "type": "ERC721",
+      "verified": true,
+      "tags": [
+        "mainnet"
+      ],
+      "logoURI": "icons/nfts/2741/0x4b432060903184c5710f2ef0cf23adc84e7ffb18.png"
+    },
+    {
+      "chainId": 2741,
+      "address": "0x5c52b005ee8291004b5a4d8e1b4ae6cc71e4ab40",
+      "name": "Plooshy Houses",
+      "symbol": "plooshy_houses",
+      "type": "ERC721",
+      "verified": true,
+      "tags": [
+        "mainnet"
+      ],
+      "logoURI": "icons/nfts/2741/0x5c52b005ee8291004b5a4d8e1b4ae6cc71e4ab40.png"
+    },
+    {
+      "chainId": 2741,
+      "address": "0x4431431a12b9af869cd78250590ee5c81d53e84b",
+      "name": "Plooshy Apartments",
+      "symbol": "plooshy_apartments",
+      "type": "ERC721",
+      "verified": true,
+      "tags": [
+        "mainnet"
+      ],
+      "logoURI": "icons/nfts/2741/0x4431431a12b9af869cd78250590ee5c81d53e84b.png"
+    },
+    {
+      "chainId": 2741,
+      "address": "0x09bb4c785165915e66f4a645bc978a6c885a0319",
+      "name": "Web3 Playboys",
+      "symbol": "W3PB",
+      "type": "ERC721",
+      "verified": true,
+      "tags": [
+        "mainnet"
+      ],
+      "logoURI": "icons/nfts/2741/0x09bb4c785165915e66f4a645bc978a6c885a0319.png"
     }
   ]
 }
